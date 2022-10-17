@@ -9,8 +9,7 @@ const Billing = ({data, handleChange}) => {
                 <input
                     type='text'
                     id="billFirstName"
-                    autoComplete="on"
-                    name="given-name"
+                    name="billFirstName"
                     placeholder="Jane"
                     value={data.billFirstName}
                     onChange={handleChange}
@@ -21,23 +20,21 @@ const Billing = ({data, handleChange}) => {
                 <input
                     type='text'
                     id="billLastName"
-                    name="family-name"
-                    autoComplete="on"
+                    name="billLastName"
                     placeholder="Doe"
-                    // value={data.familyname}
+                    value={data.billLastName}
                     onChange={handleChange}
                 />
             </div>
         </div>
                 <label htmlFor="billAddress1">Address</label>
                 <input
-                    type='email'
-                    id="email"
-                    name="email"
-                    autoComplete="on"
+                    type='text'
+                    id="billAddress1"
+                    name="billAddress1"
                     placeholder="555 Jordan Way"
-                    // value={data.billAddress1}
-                    // onChange={handleChange}
+                    value={data.billAddress1}
+                    onChange={handleChange}
                 />
                 <label htmlFor="billAddress2">2nd Address Line</label>
                 <input
@@ -50,7 +47,7 @@ const Billing = ({data, handleChange}) => {
                 />
                 <label htmlFor="billCity">City</label>
                 <input
-                    type='email'
+                    type='text'
                     id="billCity"
                     name="billCity"
                     placeholder="New York"
@@ -118,7 +115,7 @@ const Billing = ({data, handleChange}) => {
                 </select>
                 <label htmlFor="billZipCode">Zip Code</label>
                 <input
-                    type="text"
+                    type="number"
                     id="billZipCode"
                     name="billZipCode"
                     value={data.billZipCode}
