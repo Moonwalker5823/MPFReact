@@ -1,5 +1,7 @@
+import useFormContext from "../hooks/useFormContext";
 
-const Billing = ({data, handleChange}) => {
+const Billing = () => {
+    const { data, handleChange } = useFormContext()
   
   const content = (
     <div className="flex-col">
