@@ -4,7 +4,7 @@ const Shipping = () => {
 
     const { data, handleChange } = useFormContext();
 
-    const content = () => {
+    const content = (
         <>
             <label htmlFor="sameAsBilling">
                 <input
@@ -149,7 +149,7 @@ const Shipping = () => {
                 placeholder="Mike"
             />
         </>
-    }
+    )
   return content
 }
 

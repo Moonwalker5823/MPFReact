@@ -9,7 +9,7 @@ export const FormProvider = ({children}) => {
         2: "Opt-In"
     }
 
-    const [page, setPage] = useState(0)
+    const [page, setPage] = useState(0);
 
     const [data, setData] = useState ({
         billFirstName: "",
@@ -57,6 +57,7 @@ export const FormProvider = ({children}) => {
     }, [data.sameAsBilling])
  
     const handleChange = (e) => {
+        console.log(e)
         const type = e.target.type;
         const name = e.target.name;
         const value = type === "checkbox" ? e.target.checked : e.target.value;

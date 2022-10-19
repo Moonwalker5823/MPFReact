@@ -3,13 +3,13 @@ import useFormContext from "../hooks/useFormContext"
 const OptIn = () => {
     const { data, handleChange } = useFormContext();
 
-    const content = () => {
+    const content = (
         <>
             <label htmlFor="optInNews">Recieve Our Newletter
                 <input
                     type="checkbox"
                     id="optInNews"
-                    name="OptInNews"
+                    name="optInNews"
                     checked={data.optInNews}
                     onChange={handleChange}
                 />
@@ -20,7 +20,7 @@ const OptIn = () => {
                 <li>Find out about new Products</li>
             </ul>
         </>
-    }
+    )
     
   return content
 }
